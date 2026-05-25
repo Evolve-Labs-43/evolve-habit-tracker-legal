@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Privacy Policy for Ritualist — productivity and habit development by Ratna Teja A."
+    />
+    <title>Privacy Policy — Ritualist</title>
+    <style>
+      :root {
+        --bg: #0d0f14;
+        --surface: #151922;
+        --surface-elevated: #1c2230;
+        --border: #2a3348;
+        --text: #e8ecf4;
+        --text-muted: #9aa3b8;
+        --accent: #7c6cf0;
+        --accent-dim: #5b4fd4;
+        --accent-glow: rgba(124, 108, 240, 0.25);
+        --success: #3dd6c6;
+        --warning-bg: #2a2418;
+        --warning-border: #c9a227;
+        --warning-text: #f0e6c8;
+        --danger-bg: #2a1818;
+        --danger-border: #e57373;
+        --max-width: 820px;
+        --radius: 10px;
+        --font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--text);
+        background: var(--bg);
+        background-image: radial-gradient(
+            ellipse 80% 50% at 50% -20%,
+            var(--accent-glow),
+            transparent
+          ),
+          radial-gradient(
+            ellipse 60% 40% at 100% 100%,
+            rgba(61, 214, 198, 0.08),
+            transparent
+          );
+        min-height: 100vh;
+        padding: 24px 16px 48px;
+      }
+
+      .wrap {
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        padding: 32px 24px 28px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 28px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      }
+
+      .logo-mark {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--accent), var(--success));
+        margin-bottom: 16px;
+        box-shadow: 0 0 24px var(--accent-glow);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.85rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        background: linear-gradient(90deg, var(--text), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .tagline {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      .meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        justify-content: center;
+        margin-top: 20px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border);
+        font-size: 0.875rem;
+        color: var(--text-muted);
+      }
+
+      .meta-bar strong {
+        color: var(--text);
+      }
+
+      nav.toc {
+        background: var(--surface-elevated);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px 22px;
+        margin-bottom: 28px;
+      }
+
+      nav.toc h2 {
+        margin: 0 0 12px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+      }
+
+      nav.toc ol {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      nav.toc a {
+        color: var(--success);
+        text-decoration: none;
+      }
+
+      nav.toc a:hover {
+        text-decoration: underline;
+      }
+
+      main section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 24px 28px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: 1.35rem;
+        color: var(--text);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        margin: 24px 0 10px;
+        font-size: 1.05rem;
+        color: var(--accent);
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul,
+      ol {
+        margin: 0 0 14px;
+        padding-left: 1.35rem;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      a {
+        color: var(--success);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 18px;
+        font-size: 0.9rem;
+      }
+
+      th,
+      td {
+        border: 1px solid var(--border);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--surface-elevated);
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      .callout {
+        border-radius: var(--radius);
+        padding: 16px 18px;
+        margin: 16px 0;
+        border-left: 4px solid;
+      }
+
+      .callout-warning {
+        background: var(--warning-bg);
+        border-color: var(--warning-border);
+        color: var(--warning-text);
+      }
+
+      .callout-danger {
+        background: var(--danger-bg);
+        border-color: var(--danger-border);
+        color: #f5d0d0;
+      }
+
+      .callout-info {
+        background: rgba(124, 108, 240, 0.12);
+        border-color: var(--accent);
+      }
+
+      .callout-deletion {
+        background: rgba(61, 214, 198, 0.1);
+        border-color: var(--success);
+      }
+
+      .callout strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text);
+      }
+
+      footer {
+        text-align: center;
+        padding: 28px 16px;
+        color: var(--text-muted);
+        font-size: 0.875rem;
+      }
+
+      @media (max-width: 600px) {
+        main section {
+          padding: 18px 16px;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        table {
+          font-size: 0.8rem;
+        }
+        th,
+        td {
+          padding: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo-mark" aria-hidden="true"></div>
+        <h1>Ritualist</h1>
+        <p class="tagline">Privacy Policy — Productivity &amp; Habit Development</p>
+        <div class="meta-bar">
+          <span><strong>Effective date:</strong> May 26, 2026</span>
+          <span><strong>Last updated:</strong> May 26, 2026</span>
+          <span><strong>Operator:</strong> Ratna Teja A</span>
+          <span
+            ><strong>Website:</strong>
+            <a href="https://www.ritualistsystem.com">www.ritualistsystem.com</a></span
+          >
+        </div>
+      </header>
+
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#age">Who may use Ritualist</a></li>
+          <li><a href="#collect">Information we collect</a></li>
+          <li><a href="#use">How we use information</a></li>
+          <li><a href="#share">How we share information</a></li>
+          <li><a href="#retention">Data retention</a></li>
+          <li><a href="#security">Data security</a></li>
+          <li><a href="#rights">Your choices and rights</a></li>
+          <li><a href="#deletion">Data deletion instructions</a></li>
+          <li><a href="#medical">Medical disclaimer</a></li>
+          <li><a href="#international">International transfers</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ol>
+      </nav>
+
+      <main>
+        <section id="introduction">
+          <h2>1. Introduction</h2>
+          <p>
+            This Privacy Policy explains how <strong>Ritualist</strong> (“<strong>we</strong>,”
+            “<strong>us</strong>,” or “<strong>our</strong>”) collects, uses, stores, and shares
+            information when you use our mobile application <strong>Ritualist</strong> and related
+            services (collectively, the “<strong>Service</strong>”).
+          </p>
+          <p>
+            Ritualist is a <strong>productivity and habit-tracking application</strong>. It helps you
+            build routines, track completions, and view progress metrics. Ritualist is
+            <strong>not a medical device</strong> and does not provide medical, psychiatric,
+            psychological, or therapeutic services (see
+            <a href="#medical">Medical disclaimer</a>).
+          </p>
+          <p>
+            By creating an account or using the Service, you agree to this Privacy Policy. If you do
+            not agree, do not use the Service.
+          </p>
+        </section>
+
+        <section id="age">
+          <h2>2. Who may use Ritualist (age restrictions)</h2>
+          <div class="callout callout-info">
+            <strong>COPPA / children’s privacy</strong>
+            The Service is intended for users <strong>aged 13 and older</strong>. We do
+            <strong>not knowingly collect</strong> personal information from children under 13.
+          </div>
+          <p>
+            If you believe a child under 13 has provided us with personal information, contact us at
+            <a href="mailto:support@ritualistsystem.com">support@ritualistsystem.com</a> and we will
+            take steps to delete such information.
+          </p>
+          <p>
+            Parents and guardians are responsible for supervising minors’ use of devices and accounts.
+          </p>
+        </section>
+
+        <section id="collect">
+          <h2>3. Information we collect</h2>
+
+          <h3>3.1 Information you provide</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Account credentials</td>
+                <td>Email and password; Google Sign-In</td>
+                <td>Account creation and authentication</td>
+              </tr>
+              <tr>
+                <td>Profile</td>
+                <td>Display name; Google profile photo URL (if applicable)</td>
+                <td>Personalization</td>
+              </tr>
+              <tr>
+                <td>Habit &amp; ritual data</td>
+                <td>
+                  Habit names, schedules, targets, notes, ritual steps, completion history, streaks,
+                  goals, tags, sections
+                </td>
+                <td>Core functionality and cloud sync</td>
+              </tr>
+              <tr>
+                <td>Feedback (optional)</td>
+                <td>Message, optional email, category (suggestion/bug/other)</td>
+                <td>Support and product improvement</td>
+              </tr>
+              <tr>
+                <td>Subscriptions</td>
+                <td>Plan purchased or restored</td>
+                <td>Pro feature access</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>3.2 Information collected automatically</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Identifiers</td>
+                <td>Firebase Authentication user ID (UID)</td>
+                <td>Account management, sync, security</td>
+              </tr>
+              <tr>
+                <td>App interactions</td>
+                <td>
+                  Feature events (e.g. habit created/completed), screen flows — not habit titles,
+                  notes, or email in analytics payloads
+                </td>
+                <td>Product analytics</td>
+              </tr>
+              <tr>
+                <td>Crash &amp; diagnostics</td>
+                <td>Stack traces, device model, OS version</td>
+                <td>Stability and bug fixes</td>
+              </tr>
+              <tr>
+                <td>Purchase status</td>
+                <td>Free vs Pro entitlement, expiration</td>
+                <td>Billing and feature gating</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>3.3 Local storage on your device</h3>
+          <p>
+            Ritualist stores data on your device (e.g. preferences, offline cache) to support
+            reminders and performance. This data is cleared when you uninstall the app or delete your
+            account, subject to your operating system’s behavior.
+          </p>
+
+          <h3>3.4 Information we do not collect</h3>
+          <p>We do <strong>not</strong> intentionally collect:</p>
+          <ul>
+            <li>Precise GPS / geolocation</li>
+            <li>Contacts, SMS, or call logs</li>
+            <li>Photos or files from your gallery (except a profile image URL from Google Sign-In, if you use it)</li>
+            <li>Bank account numbers, crypto wallets, or similar financial credentials</li>
+          </ul>
+        </section>
+
+        <section id="use">
+          <h2>4. How we use your information</h2>
+          <ul>
+            <li>Provide and sync the Service across your devices</li>
+            <li>Process subscriptions and Pro features</li>
+            <li>Maintain security and prevent abuse</li>
+            <li>Improve Ritualist through analytics and crash reporting</li>
+            <li>Respond to support requests and feedback</li>
+            <li>Comply with applicable legal obligations</li>
+          </ul>
+          <p>We do <strong>not sell</strong> your personal information.</p>
+        </section>
+
+        <section id="share">
+          <h2>5. How we share information</h2>
+          <p>
+            We share information only with <strong>service providers</strong> that help us operate
+            Ritualist, and as required by law. We do not operate a public social network; your habit
+            data is private to your account.
+          </p>
+
+          <h3>5.1 Third-party services</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Services used</th>
+                <th>Data involved</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Google Firebase</strong> (Google LLC)</td>
+                <td>
+                  <strong>Authentication</strong>, <strong>Cloud Firestore</strong> (database sync),
+                  <strong>Firebase Analytics</strong>, <strong>Firebase Crashlytics</strong>
+                </td>
+                <td>
+                  Account identifiers, habit/sync data, usage events, crash and diagnostic logs
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Google Sign-In</strong></td>
+                <td>Optional login</td>
+                <td>Email, name, profile photo URL per your Google account settings</td>
+              </tr>
+              <tr>
+                <td><strong>Google Play / Google Play Billing</strong></td>
+                <td>In-app purchases and subscriptions</td>
+                <td>Purchase tokens and subscription status (handled under Google’s policies)</td>
+              </tr>
+              <tr>
+                <td><strong>RevenueCat, Inc.</strong></td>
+                <td>Subscription management and entitlement verification</td>
+                <td>App user ID (Firebase UID), purchase and entitlement metadata</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            These providers process data under their own terms and privacy policies. We configure
+            them for app functionality, not for unrelated advertising profiles.
+          </p>
+
+          <h3>5.2 Legal and safety</h3>
+          <p>
+            We may disclose information if required by law, court order, or to protect the rights,
+            safety, and security of users or the public.
+          </p>
+        </section>
+
+        <section id="retention">
+          <h2>6. Data retention</h2>
+          <ul>
+            <li>
+              <strong>Account and habit data:</strong> Retained while your account is active.
+            </li>
+            <li>
+              <strong>After account deletion:</strong> We delete your Firebase Authentication account
+              and Firestore user data (including synced habits under your user path) when you use
+              in-app deletion or confirm an email deletion request.
+            </li>
+            <li>
+              <strong>Analytics / Crashlytics:</strong> Retained per Google Firebase default settings;
+              we configure retention where the console allows shorter periods.
+            </li>
+            <li>
+              <strong>Purchases:</strong> Google Play and RevenueCat retain records per their policies
+              for billing, fraud prevention, and tax.
+            </li>
+          </ul>
+        </section>
+
+        <section id="security">
+          <h2>7. Data security</h2>
+          <p>
+            We use industry-standard measures, including <strong>encryption in transit (TLS)</strong>
+            for communications with Firebase and other cloud services, Firebase Authentication, and
+            access controls on production systems.
+          </p>
+          <p>
+            No method of transmission or storage is 100% secure. Use a strong password and protect
+            your device.
+          </p>
+        </section>
+
+        <section id="rights">
+          <h2>8. Your choices and rights</h2>
+          <p>
+            You can view and edit most habit and profile data inside the app. Depending on your
+            region, you may have rights to access, correct, delete, restrict, or object to processing,
+            or to data portability. Contact
+            <a href="mailto:support@ritualistsystem.com">support@ritualistsystem.com</a> to exercise
+            these rights.
+          </p>
+          <p>
+            To manage or cancel subscriptions, use
+            <strong>Google Play → Payments &amp; subscriptions</strong>.
+          </p>
+        </section>
+
+        <section id="deletion">
+          <h2>9. Data deletion instructions</h2>
+          <div class="callout callout-deletion">
+            <strong>How to delete your account and associated data</strong>
+            You can request complete deletion of your Ritualist account and cloud-synced data using
+            either method below.
+          </div>
+
+          <h3>Option A — Delete inside the app (recommended)</h3>
+          <ol>
+            <li>Open <strong>Ritualist</strong> and sign in.</li>
+            <li>Go to <strong>Settings</strong> → your <strong>Profile / Account</strong>.</li>
+            <li>Tap <strong>Delete Account</strong> and confirm.</li>
+          </ol>
+          <p>
+            This permanently deletes your Firebase Authentication account and associated Firestore
+            data (habits, sections, settings, and synced documents), and cancels local reminders
+            tied to your habits. You may be asked to <strong>sign in again recently</strong> before
+            deletion for security (Firebase requirement).
+          </p>
+
+          <h3>Option B — Email deletion request</h3>
+          <p>
+            If you cannot access the app, you may request complete data deletion by emailing:
+          </p>
+          <p>
+            <strong
+              ><a href="mailto:support@ritualistsystem.com?subject=Data%20Deletion%20Request"
+                >support@ritualistsystem.com</a
+              ></strong
+            >
+          </p>
+          <p>
+            Use the email subject line: <strong>Data Deletion Request</strong>
+          </p>
+          <p>Please include:</p>
+          <ul>
+            <li>The email address linked to your Ritualist account</li>
+            <li>A brief statement that you want all account and associated data permanently deleted</li>
+          </ul>
+          <p>
+            We will verify ownership of the account and complete deletion within a reasonable period
+            (typically within 30 days), unless a longer period is required by law. We may retain
+            minimal information only where required for legal, security, or fraud-prevention
+            purposes.
+          </p>
+        </section>
+
+        <section id="medical">
+          <h2>10. Medical disclaimer</h2>
+          <div class="callout callout-warning">
+            <strong>Not medical advice</strong>
+            Ritualist is a <strong>productivity and habit-tracking tool</strong>. It is designed to
+            help you organize daily actions, rituals, and personal goals.
+          </div>
+          <p>Ritualist is <strong>not</strong>:</p>
+          <ul>
+            <li>A medical device or diagnostic tool</li>
+            <li>
+              A substitute for professional medical, psychiatric, psychological, or therapeutic advice,
+              diagnosis, or treatment
+            </li>
+            <li>An emergency or crisis service</li>
+          </ul>
+          <p>
+            Always seek advice from qualified health professionals for medical or mental-health
+            concerns. Never disregard professional advice because of something in the app. If you are
+            in crisis, contact local emergency services or a crisis helpline in your region.
+          </p>
+        </section>
+
+        <section id="international">
+          <h2>11. International transfers</h2>
+          <p>
+            We and our service providers (including Google and RevenueCat) may process data in
+            countries other than your own, including the United States. We take steps consistent
+            with applicable law for cross-border transfers.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h2>12. Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy. We will post the new version with an updated effective
+            date on this page and, where required, provide additional notice in the app or by email.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>13. Contact us</h2>
+          <p>
+            <strong>Developer / data controller:</strong> Ratna Teja A<br />
+            <strong>App:</strong> Ritualist<br />
+            <strong>Email:</strong>
+            <a href="mailto:support@ritualistsystem.com">support@ritualistsystem.com</a><br />
+            <strong>Website:</strong>
+            <a href="https://www.ritualistsystem.com">www.ritualistsystem.com</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 Ratna Teja A — Ritualist. All rights reserved.</p>
+        <p>Privacy Policy effective May 26, 2026.</p>
+      </footer>
+    </div>
+  </body>
+</html>
